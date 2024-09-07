@@ -1,0 +1,12 @@
+.card-img{
+    width: 100% !important;
+    height: 100% !important;
+}
+.card-bg{
+    width: 30rem !important;
+    height: 30rem !important; 
+    border: 2px dotted blue !important;
+    margin: 1.5rem !important;
+    margin-bottom: 2rem !important;
+    
+}

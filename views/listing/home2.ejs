@@ -1,0 +1,18 @@
+<% layout("/layouts/userboiler.ejs") %>
+
+<body>
+    <h1>My Day</h1>
+    <h3><%= new Date().toLocaleDateString('en-IN', { day: '2-digit', month:
+        '2-digit', year: 'numeric' }) %></h3>
+
+    <div class="outShow">
+        
+
+    </div>
+    <form action="/user/<%= user._id %>" method="post">
+        <input type="text" class="task col-md-10" placeholder="Enter task"
+            name="list">
+        <button class="btn">add new Task</button>
+    </form>
+
+</body>

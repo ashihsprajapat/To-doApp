@@ -1,0 +1,15 @@
+.login-card{
+    background-color: rgb(211, 211, 127) !important;
+    color: black !important;
+    padding: 0% !important  ;
+    margin: 1rem;
+}
+.create-acount{
+    text-decoration: none;
+    font-size: 1rem !important;
+    margin: 0.5 rem;   
+}
+.create-acount:hover{
+    text-decoration: underline;
+    margin: 1rem;
+}

@@ -1,0 +1,21 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<!-- //< layout("/layouts/boilerplate.ejs") %> -->
+<body>
+    <h1>My Day</h1>
+    <h3><%= new Date().toLocaleDateString('en-IN', { day: '2-digit', month:
+        '2-digit', year: 'numeric' }) %></h3>
+
+    <div class="outShow">
+
+    </div>
+    <form action>
+        <input type="text" class="task col-md-10" placeholder="Enter task">
+    </form>
+
+
+    <script>
+        const imgUrl = "<%= imgUrl %>";
+document.body.style.backgroundImage = `url(${imgUrl})`;
+    </script>
+    
+</body>

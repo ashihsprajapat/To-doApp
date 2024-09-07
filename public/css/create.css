@@ -1,0 +1,11 @@
+.create-form{
+    background-color: rgb(213, 213, 16) !important;
+    width: fit-content  ;
+    margin: 1%   !important;
+    border-radius: 1rem;
+    padding: 1 !important;
+    align-items: center !important;
+    width: fit-content;
+    margin-top: 2rem !important;
+    
+}

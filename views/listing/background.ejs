@@ -1,0 +1,17 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<body>
+    <h3>select for background img</h3>
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 ">
+    <%for(let url of allBG){%>
+        <a href="/bg/<%= url._id%>">
+        <div class="card cols card-bg col-md-4" >
+            <img src="<%= url.url %>" class="card-img-top card-img" alt="..." >
+        </div>
+
+        </a>
+    <% } %>
+</div>
+</body>
+</html>
+ 
+

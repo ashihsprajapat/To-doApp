@@ -1,0 +1,94 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<body>
+    <h2>Fill Details</h2>
+    <form class="row g-3 needs-validation create-form" novalidate action="/user" method="post">
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">
+                Username</label>
+            <input type="text" class="form-control" id="validationCustom01"
+                placeholder="Enter Userame" required name="user[username]">
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please Enter Uniqe UserName.
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom02" class="form-label"> Passwerd</label>
+            <input type="password" class="form-control" id="validationCustom02"
+                required placeholder="Enter Strong Passwerd" name="user[passwerd]">
+            <div class="valid-feedback">
+                Strong Passwerd
+            </div>
+            <div class="invalid-feedback">
+                Please Enter Strong passwerd.
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">
+                Name</label>
+            <input type="text" class="form-control" id="validationCustom01"
+                placeholder="Enter Name" required name="user[name]">
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please Enter Name.
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom02" class="form-label"> DOB</label>
+            <input type="date" class="form-control" id="validationCustom02"
+                required name="user[dob]">
+            <div class="valid-feedback">
+                DoB is correct
+            </div>
+            <div class="invalid-feedback">
+                Please Enter right DOB
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom02" class="form-label"> Emial</label>
+            <input type="email" class="form-control" id="validationCustom02"
+                required placeholder="ashishprajapt202@gmail.com" name="user[email]">
+                <div class="invalid-feedback">
+                    Please Enter your Gmail
+                </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom03" class="form-label">State</label>
+            <input type="text" class="form-control" id="validationCustom03"
+                required placeholder="Enter your State" name="user[state]">
+            <div class="invalid-feedback">
+                Please Enter your State
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label for="validationCustom03" class="form-label">City</label>
+            <input type="text" class="form-control" id="validationCustom03"
+                required placeholder="Enter your city"  name="user[city]">
+            <div class="invalid-feedback">
+                Please Enter your city
+            </div>
+        </div>
+        
+
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input " type="checkbox" value
+                    id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Create Account</button>
+        </div>
+    </form>
+</body>

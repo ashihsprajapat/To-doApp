@@ -1,0 +1,16 @@
+
+
+.outShow{
+    width: 97%;
+    height: 60%;
+    margin: 6px;
+    padding: 200px;
+    border: 2px solid rebeccapurple;
+    background-color: red;
+}
+body{
+    background-color: red;
+}
+.task{
+    font-size: 2rem;
+}

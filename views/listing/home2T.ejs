@@ -1,0 +1,31 @@
+<% layout("/layouts/userboiler.ejs") %>
+
+<body>
+    <h1>My Day</h1>
+    <h3><%= new Date().toLocaleDateString('en-IN', { day: '2-digit', month:
+        '2-digit', year: 'numeric' }) %></h3>
+
+    <div class="outShow">
+        <% for (let i = 0; i < allListing.length; i++) { %>
+
+        <div class="alert alert-primary" role="alert" style="width: 100% ;">
+            <%= allListing[i].list %>
+            <!-- <a href="/delete/<= list._id %>">
+                delete more
+                
+            </a> -->
+            <form action="" method="get">
+                <button> add</button>
+            </form>
+        </div>
+        
+        <% } %>
+
+    </div>
+    <form action="/user/<%= user._id %>" method="post">
+        <input type="text" class="task col-md-10" placeholder="Enter task"
+            name="list">
+        <button class="btn">add</button>
+    </form>
+
+</body>

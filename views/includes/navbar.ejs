@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom">
     <div class="container-fluid">
-        
-        <a class="navbar-brand" href="#"><i class="fa-solid fa-square-check"></i>ToDo</a>
+
+        <a class="navbar-brand" href="#"><i
+                class="fa-solid fa-square-check"></i>ToDo</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -10,15 +11,24 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">All Task</a>
+                <a class="nav-link active" aria-current="page" href="#">All
+                    Task</a>
                 <a class="nav-link" href="#">Completed</a>
                 <a class="nav-link" href="#">Uncomplete</a>
-                <a class="nav-link" href="#">Backgrounds</a>
+                <a class="nav-link" href="/background">Backgrounds</a>
                 <form class="d-flex nav-link" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
+                    <input class="form-control me-2" type="search"
+                        placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success"
+                        type="submit">Search</button>
+                </form>
+                <% if(!currUser){%>
                 <a class="nav-link" href="/login">Login</a>
+                <a class="nav-link" href="/singup">sign up</a>
+                <%}%>
+                <% if(currUser){%>
+                <a class="nav-link" href="/log out">log out</a>
+                <%}%>
             </div>
         </div>
     </div>

@@ -1,0 +1,38 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<body>
+
+    <form class="row g-3 needs-validation create-form" novalidate action="/user"
+        method="post">
+        <div class="row offset-2 mb-3">
+            <div class="col-md-11">
+                <label for="validationCustom01" class="form-label">
+                    Username</label>
+                <input type="text" class="form-control" id="username"
+                    required name="username">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please Enter Uniqe UserName.
+                </div>
+            </div>
+            
+            <div class="col-md-11 mb-3">
+                <label for="validationCustom02" class="form-label">
+                    Password</label>
+                <input type="password" class="form-control" id="password"
+                    required
+                    name="password">
+                <div class="valid-feedback">
+                    Strong Passwerd
+                </div>
+                <div class="invalid-feedback">
+                    Please Enter Strong passwerd.
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Log in</button>
+            </div>
+        </div>
+    </form>
+</body>
